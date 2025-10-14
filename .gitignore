@@ -1,0 +1,15 @@
+# Ficheiro de configuração com senhas e segredos
+.env
+
+# Ficheiro com dados de passageiros
+passageiros.csv
+
+# Pastas de cache do Python
+__pycache__/
+
+# Outros ficheiros de ambiente virtual (se usar)
+venv/
+*.venv
+
+# Pasta de configuração do PyCharm/JetBrains
+/.idea
