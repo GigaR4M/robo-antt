@@ -51,7 +51,8 @@ def adicionar_passageiros(pagina: Page, caminho_csv: str):
     Adiciona os passageiros a partir de um ficheiro CSV.
     """
     try:
-        df_passageiros = pd.read_csv(caminho_csv)
+        # Lê o CSV garantindo que colunas vazias fiquem como texto vazio
+        df_passageiros = pd.read_csv(caminho_csv, dtype=str).fillna('')
     except FileNotFoundError:
         print(f"Erro: O ficheiro {caminho_csv} não foi encontrado.")
         return
@@ -60,8 +61,9 @@ def adicionar_passageiros(pagina: Page, caminho_csv: str):
 
     for indice, passageiro in df_passageiros.iterrows():
         nome = passageiro["nome"]
-        numero_documento = str(passageiro["numero_documento"])
-        ntelefone = str(passageiro["ntelefone"])
+        numero_documento = passageiro["numero_documento"]
+        # A linha abaixo agora é segura por causa das alterações na leitura do CSV
+        ntelefone = passageiro["ntelefone"] 
         
         print(f"A adicionar passageiro: {nome}")
 
@@ -69,6 +71,10 @@ def adicionar_passageiros(pagina: Page, caminho_csv: str):
         pagina.locator("#cmbTipoDocumento1").select_option("14") 
         pagina.locator('input[name="txtIdentidade"]').fill(numero_documento)
         pagina.locator('input[name="txtOrgao"]').fill("RECEITA FEDERAL")
+        
+        # --- ALTERAÇÃO PRINCIPAL AQUI ---
+        # Agora a variável 'ntelefone' conterá "" em vez de "nan"
+        # quando o campo estiver vazio no CSV.
         pagina.locator("#telefone").fill(ntelefone)
         
         pagina.locator("#btnInc").click()
