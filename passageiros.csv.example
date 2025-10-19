@@ -1,5 +1,27 @@
-nome,tipo_documento,numero_documento,orgao_expedidor,situacao,ntelefone
-Carla Martins,CPF,11122233344,Receita Federal,Brasileiro maior,84999998888
-Bruno Azevedo,CPF,22233344455,Receita Federal,Brasileiro maior,
-Pedro Henrique Criança,RG,1234567,SSP/RN,Brasileiro criança,84988887777
-Juliana Lima,CPF,44455566677,Receita Federal,Brasileiro maior,
+nome,situacao,crianca_de_colo,tipo_documento,numero_documento,orgao_expedidor,ntelefone
+"Ana CPF Maior","Brasileiro Maior","não","CPF","11122233344","Receita Federal","84999887766"
+"Bruno Identidade Maior","Brasileiro Maior","não","Carteira de Identidade","1234567","SSP/RN",""
+"Carla CNH Maior","Brasileiro Maior","não","Carteira Nacional de Habilitação (CNH)","01234567890","DETRAN/SP","84988776655"
+"Daniel PassaporteBR Maior","Brasileiro Maior","não","Passaporte Brasileiro","FA123456","Polícia Federal",""
+"Elena CartTrabalho Maior","Brasileiro Maior","não","Carteira de Trabalho","12345678901","MTE",""
+"Fábio CartProfissional Maior","Brasileiro Maior","não","Carteira Profissional","98765","OAB/RN",""
+"Gabriela RIC Maior","Brasileiro Maior","não","Registro de Identificação Civil - RIC","1112223334455566677","Governo Federal",""
+"Hugo FUNAI Maior","Brasileiro Maior","não","Autorização de Viagem - FUNAI","FUNAI123","FUNAI",""
+"Isabela CPF Adolescente","Brasileiro Adolescente","não","CPF","22233344455","Receita Federal",""
+"João Identidade Adolescente","Brasileiro Adolescente","não","Carteira de Identidade","3456789","SSP/RJ",""
+"Karina CNH Adolescente","Brasileiro Adolescente","não","Carteira Nacional de Habilitação (CNH)","12345678901","DETRAN/MG","84977665544"
+"Luan PassaporteBR Adolescente","Brasileiro Adolescente","não","Passaporte Brasileiro","FB654321","Polícia Federal",""
+"Márcia CartTrabalho Adolescente","Brasileiro Adolescente","não","Carteira de Trabalho","23456789012","MTE",""
+"Nicolas CartProfissional Adolescente","Brasileiro Adolescente","não","Carteira Profissional","54321","CREA/SP",""
+"Olívia RIC Adolescente","Brasileiro Adolescente","não","Registro de Identificação Civil - RIC","9998887776655544433","Governo Federal",""
+"Paulo FUNAI Adolescente","Brasileiro Adolescente","não","Autorização de Viagem - FUNAI","FUNAI456","FUNAI",""
+"Quitória Certidao Criança","Brasileiro Criança","não","Certidão de Nascimento","123456789012345678901234","Cartório Paz e Amor",""
+"Ravi Identidade Criança","Brasileiro Criança","não","Carteira de Identidade","7654321","SSP/CE",""
+"Sofia CPF Criança","Brasileiro Criança","não","CPF","33344455566","Receita Federal",""
+"Theo PassaporteBR Criança","Brasileiro Criança","não","Passaporte Brasileiro","FC987654","Polícia Federal",""
+"Ulisses FUNAI Criança","Brasileiro Criança","não","Autorização de Viagem - FUNAI","FUNAI789","FUNAI",""
+"Valentina Certidao Criança DE COLO","Brasileiro Criança","sim","Certidão de Nascimento","987650987650987650987650","Cartório Vida Feliz",""
+"William PassaporteEST Estrangeiro","Estrangeiro","não","Passaporte Estrangeiro","DE12345XYZ","Alemanha",""
+"Ximena CIE Estrangeiro","Estrangeiro","não","Cédula de Identidade de Estrangeiro - CIE","9876543-X","Polícia Federal",""
+"Yuri IDDiplomatica Estrangeiro","Estrangeiro","não","Identidade diplomática ou consular","CONSUL007","Consulado do Japão",""
+"Zoe OutroDoc Estrangeiro","Estrangeiro","não","Outro documento legal de viagem","TRAVELDOC99","ONU",""
