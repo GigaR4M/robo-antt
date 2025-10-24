@@ -70,8 +70,13 @@ def fazer_login(pagina: Page, placa: str, nsolicitacao: str):
     pagina2.get_by_role("link", name="Autorização de Viagem Comum").click()
     pagina2.get_by_role("row", name="Listar Solicitação/Autorizaçã").get_by_role("button").click()
 
-    print(f"A procurar pela solicitação: {nsolicitacao}")
-    pagina2.get_by_role("link", name=nsolicitacao).click()
+    try:
+        print(f"A procurar pela solicitação: {nsolicitacao}")
+        pagina2.get_by_role("link", name=nsolicitacao).click()
+    except Exception:
+        print(f"ERRO: Solicitação '{nsolicitacao}' não foi encontrada na página.")
+        print("Verifique o NUMERO_SOLICITACAO no ficheiro .env ou se a solicitação existe.")
+        return None # Retorna None para parar a execução
     pagina2.get_by_role("button", name="Submit").nth(1).click()
     
     pagina2.goto("https://appweb1.antt.gov.br/autorizacaoDeViagem/AvPublico/relacao.asp")
